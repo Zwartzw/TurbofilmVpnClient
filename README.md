@@ -1,7 +1,7 @@
 What is this?
 ======
 
-This is a tool for using [vemeo.com](vemeo.com "Vemeo VPN") vpn for the selected hosts.
+This is a tool for using [vemeo.com](https://vemeo.com/ "Vemeo VPN") vpn for the selected hosts.
 
 How to use the code
 ======
