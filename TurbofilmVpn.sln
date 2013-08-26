@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurbofilmVpn", "Source\TurbofilmVpn\TurbofilmVpn.csproj", "{44351F6A-FDFE-4581-968E-5CD4444C39DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{090132A6-79AD-4D0D-BE35-2FD53C39F798}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{A3AE153B-4633-47F1-A87A-99C60CEC912A}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installer", "Installer", "{BB7071A3-B1D5-4F89-8A0F-77262C6BBF5A}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Source\Setup\Setup.isproj", "{51696198-78A4-4C1B-965B-4184949C2DA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.Debug|Any CPU.ActiveCfg = DVD-5
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.Debug|Any CPU.Build.0 = DVD-5
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.DVD-5|Any CPU.Build.0 = DVD-5
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.Release|Any CPU.ActiveCfg = SingleImage
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.Release|Any CPU.Build.0 = SingleImage
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{51696198-78A4-4C1B-965B-4184949C2DA6}.SingleImage|Any CPU.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44351F6A-FDFE-4581-968E-5CD4444C39DC} = {090132A6-79AD-4D0D-BE35-2FD53C39F798}
+		{51696198-78A4-4C1B-965B-4184949C2DA6} = {BB7071A3-B1D5-4F89-8A0F-77262C6BBF5A}
+	EndGlobalSection
+EndGlobal
