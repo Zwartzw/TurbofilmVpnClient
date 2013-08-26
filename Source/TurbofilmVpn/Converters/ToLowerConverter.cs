@@ -1,0 +1,23 @@
+using System;
+using System.Globalization;
+
+namespace TurbofilmVpn.Converters
+{
+    public class ToLowerConverter : MarkupConverter
+    {
+        protected override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            if (value is string)
+                return ((string)value).ToLower(culture);
+
+            return value;
+        }
+
+        protected override object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return value;
+        }
+
+        public ToLowerConverter() { }
+    }
+}

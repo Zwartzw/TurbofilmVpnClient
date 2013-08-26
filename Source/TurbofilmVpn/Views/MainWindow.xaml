@@ -1,0 +1,44 @@
+﻿<Window x:Class="TurbofilmVpn.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        
+        xmlns:converters="clr-namespace:TurbofilmVpn.Converters"
+       
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
+        d:DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
+        
+        Title="Turbofilm Vpn" Height="350" Width="525" ResizeMode="CanResizeWithGrip"
+        Icon="/TurbofilmVpn;component/Icons/turbofilm.ico"
+        Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Style="{StaticResource DataGrid_FixedStyle}"  BorderThickness="0,0,0,1"
+                  HorizontalGridLinesBrush="Gray"
+                  VerticalGridLinesBrush="Gray"
+                  
+                  VerticalScrollBarVisibility="Visible"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  CanUserSortColumns="False"
+                  IsReadOnly="True"
+                  IsHitTestVisible="False"
+            
+                  ItemsSource="{Binding Hosts, Mode=OneWay}">
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="Host" Binding="{Binding Hostname, Mode=OneWay}" MinWidth="100" />
+                <DataGridTextColumn Header="Ipv4" Binding="{Binding IPAddresses, Mode=OneWay, Converter={converters:IEnumerableToStringConverter}}" MinWidth="50" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <UniformGrid Grid.Row="1" Rows="1" Columns="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Connect" Command="{Binding ConnectCommand, Mode=OneWay}" Padding="7,0" Margin="10,0" />
+            <Button Content="Disconnect" Command="{Binding DisconnectCommand, Mode=OneWay}" Padding="7,0" Margin="10,0" />
+        </UniformGrid>
+    </Grid>
+</Window>
